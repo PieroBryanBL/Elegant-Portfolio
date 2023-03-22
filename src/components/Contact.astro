@@ -1,0 +1,87 @@
+---
+import Footer from "./Footer.astro";
+import ContainerBg from "../components/ContainerBg.astro";
+---
+
+<section id="contactme">
+  <h2 class="text-3xl w-10/12 mx-auto font-bold my-5 text-black">Contact</h2>
+  <div class="bg-gradient-to-tr from-[#04004f] to-black py-5 md:hidden">
+    <form action="" class="flex flex-col w-10/12 mx-auto gap-2 my-5 p-2">
+      <label for="name" class="text-white">Name</label>
+      <input
+        type="text"
+        maxlength="40"
+        required
+        class="py-2 bg-white text-black"
+      />
+
+      <label for="name" class="text-white">Email</label>
+      <input
+        type="text"
+        maxlength="40"
+        required
+        class="py-2 bg-white text-black"
+      />
+
+      <label for="name" class="text-white">Message</label>
+      <textarea
+        name="message"
+        id="message"
+        cols="30"
+        rows="5"
+        class="bg-white text-black"></textarea>
+      <input
+        type="submit"
+        class="btn rounded-full bg-white hover:bg-[#d8d8d8] text-black italic my-5"
+      />
+    </form>
+    <Footer />
+  </div>
+
+  <!-- For PC -->
+  <div class="hidden md:block">
+    <div
+      class="hidden md:flex md:gap-5 md:w-11/12 mx-auto md:flex-nowrap md:justify-center md:items-center"
+    >
+      <form
+        action=""
+        class="text-black flex flex-col gap-2 mb-10 bg-gradient-to-tr from-[#04004f] to-black p-16 w-96 md:w-[1200px]"
+      >
+        <label for="name" class="text-white">Name</label>
+        <input type="text" maxlength="40" required class="py-2 bg-white" />
+
+        <label for="name" class="text-white">Email</label>
+        <input type="text" maxlength="40" required class="py-2 bg-white" />
+
+        <label for="name" class="text-white">Message</label>
+        <textarea
+          name="message"
+          id="message"
+          cols="30"
+          rows="5"
+          class="bg-white"
+          required></textarea>
+        <input
+          type="submit"
+          class="btn rounded-full bg-white hover:bg-[#d8d8d8] text-black italic my-5"
+        />
+      </form>
+
+      <div class="w-full flex justify-center items-center text-center">
+        <div
+          class="bg-white text-black p-4 border border-blue-100 shadow-[20px_11px_0px_azure] w-auto"
+        >
+          <h2 class="text-3xl">Hey!</h2>
+          <p>
+            Do not hesitate to task any questions yout need. I am avaliable to
+            learn and continue to contribute to those who need it most. If you
+            need to contact me, plase do not hesitate to do so.
+          </p>
+        </div>
+      </div>
+    </div>
+    <ContainerBg>
+      <Footer />
+    </ContainerBg>
+  </div>
+</section>

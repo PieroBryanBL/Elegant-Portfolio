@@ -1,0 +1,26 @@
+---
+import Layout from "../components/Layout.astro";
+import ContainerBg from "../components/ContainerBg.astro";
+import Navegation from "../components/Nav.astro";
+import Hero from "../components/Hero.astro";
+import Skills from "../components/Skills.astro";
+import Proyects from "../components/Proyects.astro";
+import Phrase from "../components/Phrase.astro";
+import Contact from "../components/Contact.astro";
+---
+
+<Layout pageTitle="Portafolio" pageDescription="Explore my project on this static landing page and discover more about my work in areas such as web design, development, and programming. Uncover unique details about my creative process and how I applied my skills in this project. Visit my page and discover what I have to offer!">
+  <header>
+    <ContainerBg>
+      <Navegation />
+      <Hero />
+    </ContainerBg>
+  </header>
+
+  <main>
+    <Skills />
+    <Proyects/>
+    <Phrase/>
+    <Contact/>
+  </main>
+</Layout>

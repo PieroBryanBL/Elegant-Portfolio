@@ -1,0 +1,17 @@
+---
+interface Props {
+  skill: string;
+  style?: string;
+  id?: string;
+}
+
+const { skill, style, id } = Astro.props;
+---
+
+<button
+  class="bg-[#7e7aff] font-semibold hover:bg-[#bcbaff] rounded-sm duration-100 text-gray-900 px-2"
+  style={style}
+  id={id}
+>
+  {skill}</button
+>
