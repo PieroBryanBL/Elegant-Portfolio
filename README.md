@@ -24,7 +24,7 @@ This way you will be able to work on this project after downloading it:
     
 ## Screenshots
 
-![App Screenshot](./capture-web.webp)
+![App Screenshot](./public/capture-web.webp)
 
 
 ## Appendix
